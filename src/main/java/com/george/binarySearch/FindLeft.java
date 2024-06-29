@@ -6,6 +6,11 @@ import java.util.Arrays;
  * 查找在有序数组中,最左边(最小下标)位置 >=num 元素的下标值
  */
 public class FindLeft {
+
+    /**
+     * 对数器校验
+     * @param args
+     */
     public static void main(String[] args) {
         int N = 100; // 生成数组的长度: [0,100)
         int V = 1000; // 生成数的范围: [0,1000)
@@ -22,6 +27,7 @@ public class FindLeft {
 //            System.out.println(Arrays.toString(arr)); // 打印生成的数组
             // 生成一个数值,作为查询的目标值,范围在 [0, V-1]
             int target = (int) (Math.random() * V);
+            // 用暴力解与最优解做对比,如果不同则表示最优解可能有异常.
             if (right(arr, target) != findLeft(arr, target)) {
                 System.out.println("findLeft方法存在错误");
             }
