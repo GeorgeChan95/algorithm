@@ -58,6 +58,6 @@ public class ReverseDoubleList {
             last = head; // 当前节点变成前一个节点,指针后移
             head = next; // 指针指向下一个节点,进入下一轮循环.
         }
-        return last; // 返回前一个节点,last是最后不为空的元素
+        return last; // 返回反转后的头节点的引用
     }
 }

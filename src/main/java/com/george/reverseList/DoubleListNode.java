@@ -1,5 +1,8 @@
 package com.george.reverseList;
 
+/**
+ * 双向链表节点
+ */
 public class DoubleListNode {
 
     public int value;

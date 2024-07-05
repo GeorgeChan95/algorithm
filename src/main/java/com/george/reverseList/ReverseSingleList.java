@@ -55,6 +55,6 @@ public class ReverseSingleList {
             pre = head; // 当前节点赋值给pre,指针后移
             head = next; // 指针移动到next节点,继续循环
         }
-        return pre;
+        return pre; // 最后头节点的引用
     }
 }
