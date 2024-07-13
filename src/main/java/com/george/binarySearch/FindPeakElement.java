@@ -22,6 +22,11 @@ public class FindPeakElement {
         System.out.println("找到峰值下标: " + peak + " ,找到峰值: " + arr[peak]); // 找到峰值下标: 7 ,找到峰值: 80
     }
 
+    /**
+     * 使用二分查找,找到数组中的峰值
+     * @param arr 数组
+     * @return
+     */
     public static int findPeak(int[] arr) {
         int n = arr.length; // 数组的长度
         if (n == 1) { // 数组长度为1,那么这个元素就是峰值,因为: arr[-1] = arr[n] = 无穷小
